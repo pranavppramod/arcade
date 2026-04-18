@@ -8,7 +8,7 @@ const Tetris = lazy(() => import('./pages/Tetris'));
 
 const Game2048LeaderBoard = lazy(() => import('./pages/Game2048LeaderBoard'));
 const WordleLeaderBoard = lazy(() => import('./pages/WorldleLeaderBoard'));
-const TetrisLeaderBoard = lazy(() => import('./pages/TetrisLeaderBoard'));
+const TetrisLeaderBoard = lazy(() => import('./pages/Tetris'));
 
 export const appRoutes = [
   {
@@ -20,7 +20,7 @@ export const appRoutes = [
     element: <Game2048 />,
   },
   {
-    path: "/2048-leaderboard",
+    path: "/2048-LeaderBoard",
     element: <Game2048LeaderBoard />,
   },
   {
@@ -28,15 +28,11 @@ export const appRoutes = [
     element: <Worldle />,
   },
   {
-    path: "/wordle-leaderboard",
+    path: "/wordle-LeaderBoard",
     element: <WordleLeaderBoard />,
   },
   {
     path: "/tetris",
     element: <Tetris />,
-  },
-  {
-    path: "/tetris-leaderboard",
-    element: <TetrisLeaderBoard />,
-  }  
+  }
 ];
