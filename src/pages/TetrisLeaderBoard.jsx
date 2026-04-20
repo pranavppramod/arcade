@@ -1,6 +1,8 @@
 import React from 'react';
 import LeaderBoardLayout from '../layouts/LeaderBoardLayout';
+import { getGameData } from '../data/games';
 
 export default function TetrisLeaderBoard() {
-  return <LeaderBoardLayout />;
+  const data=getGameData("TETRIS");
+  return <LeaderBoardLayout {...data}/>;
 }
